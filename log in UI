@@ -1,0 +1,19 @@
+ private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        String Password = passwordfield.getText();
+        String Username = usernamefield.getText();
+
+        if (Password.contains("1") && Username.contains("Dave")){
+            passwordfield.setText(null);
+            usernamefield.setText(null);
+            form jf2;
+            jf2 = new form();
+            jf2.show();
+
+            dispose();
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null, "Invalid");
+            passwordfield.setText(null);
+            usernamefield.setText(null);
+        }
